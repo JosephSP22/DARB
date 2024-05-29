@@ -275,4 +275,7 @@ footer {
         bottom: 20px;
         right: 20px;
     }
+     .links a {
+        font-size: 12px;
+    }
 }
