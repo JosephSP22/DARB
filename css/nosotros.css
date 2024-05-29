@@ -169,5 +169,9 @@ body {
         max-width: 300px;
         height: auto;
     }
+    .about-us h2 {
+        margin-top: 40px;
+    
+    }
 
 }
