@@ -275,7 +275,7 @@ footer {
         bottom: 20px;
         right: 20px;
     }
-     .contactos p, .links a {
-        font-size: 12px;
+    .contactos p, .links a {
+        font-size: 11px;
     }
 }
