@@ -1,0 +1,174 @@
+@import url(https://fonts.googleapis.com/css?family=Muli);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+    .btn-flotante {
+        font-size: 14px;
+        padding: 12px 20px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+.slider {
+    width: 80%;
+    max-width: 600px;
+    height: 400px;
+    margin: 50px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 300%;
+    animation: slide 15s infinite alternate ease-in-out;
+}
+
+.slider li {
+    list-style: none;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@keyframes slide {
+
+    0%,
+    20% {
+        margin-left: 0%;
+    }
+
+    25%,
+    45% {
+        margin-left: -100%;
+    }
+
+    50%,
+    70% {
+        margin-left: -200%;
+    }
+}
+
+
+
+.visi-misi {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.vision,
+.mision {
+    width: 45%;
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.vision h2,
+.mision h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+
+.layout {
+    background-color: #add8e6;
+    /* Azul claro */
+    padding: 20px;
+    /* Espaciado interno */
+    margin: 20px 0;
+    /* Margen superior e inferior */
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info,
+.more-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* Asegura que los elementos dentro se alineen en columna */
+    align-items: center;
+    /* Centra horizontalmente */
+    justify-content: center;
+    /* Centra verticalmente */
+}
+
+.contact-info p,
+.more-info p {
+    text-align: center;
+    width: 80%;
+    /* Ajusta según sea necesario para el ancho deseado */
+}
+
+
+@media (max-width: 768px) {
+    .contactos p,
+    .links a {
+        font-size: 15px;
+    }
+    .contactos,
+    .links {
+        text-align: center;
+    }
+
+    .links a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .visi-misi {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vision,
+    .mision {
+        width: 90%;
+    }
+
+    .slider {
+        width: 90%;
+        height: 250px;
+    }
+
+    
+}
+
+@media (max-width: 480px) {
+
+    .contactos p,
+    .links a {
+        font-size: 10px;
+    }
+
+    .links a {
+        display: block;
+        margin: 5px 0;
+    }
+
+}

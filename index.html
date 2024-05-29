@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAR Beca</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="./img/logo.png" type="image/png">
+
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo1"><img src="./img/logo.png" alt="">DAR Beca</a>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar" class="icon"><i class="fas fa-bars"></i></label>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./PaginaProgramas.html">Programas</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./contacto.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="zona1"></section>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("abajo", window.scrollY > 0);
+        });
+    </script>
+    <br><br><br><br>
+    <main>
+        <div class="slider">
+            <ul>
+                <li><img src="./img/becas-1068x525.jpg" alt=""></li>
+                <li><img src="./img/maxresdefault.jpg" alt=""></li>
+                <li><img src="./img/OIP.jpg" alt=""></li>
+            </ul>
+        </div>
+        <section class="visi-misi">
+            <div class="vision">
+                <h2>Visión</h2>
+                <p>Hacer que los jóvenes puedan tener mejores oportunidades de preparación universitaria por medio de
+                    becas que los apoyen, dándoles así una mejor preparación académica para afrontar los problemas de la
+                    vida cotidiana.</p>
+            </div>
+            <div class="mision">
+                <h2>Misión</h2>
+                <p>Lograr llegar a muchos jóvenes que deseen superarse y que por medio de este programa brindarles
+                    programas que los ayuden a conseguir una preparación académica digna.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="contactos">
+                <p><i class="fas fa-phone"></i> +503 6000 1828</p>
+                <p><i class="fas fa-envelope"></i> darbeca@gmail.com</p>
+                <p><i class="fab fa-facebook-f"></i> DAR Beca</p>
+                <p><i class="fab fa-instagram"></i> @darbeca.sv</p>
+            </div>
+            <div class="links">
+                <a href="./index.html">Inicio</a>
+                <a href="./PaginaProgramas.html">Programas</a>
+                <a href="./nosotros.html">Sobre Nosotros</a>
+                <a href="./contacto.html">Contactos</a>
+
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Copyright DAR Beca</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  text-align: justify;
+}
+
+.contact_form {
+  width: 90%;
+  max-width: 460px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding: 30px 20px;
+  background-color: #f7bde9;
+}
+
+input, textarea {
+  background-color: #fbfbfb;
+  width: 100%;
+  max-width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ab4493;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 150px;
+  padding-top: 15px;
+}
+
+label {
+  display: block;
+}
+
+button {
+  height: 45px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #ab4493;
+  border-color: #ab4493;
+  border-style: solid;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 420px;
+  cursor: pointer;
+}
+
+button p {
+  color: #fff;
+  margin: 0;
+}
+
+span {
+  color: #ab4493;
+}
+
+.aviso {
+  font-size: 13px;
+  color: #0e0e0e;
+}
+
+h1 {
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+  color: #ab4493;
+}
+
+h3 {
+  font-size: 16px;
+  padding-bottom: 30px;
+  color: #0e0e0e;
+}
+
+.pform{
+  font-size: 14px;
+  color: #0e0e0e;
+}
+
+::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+
+::-webkit-textarea-placeholder {
+  color: #a8a8a8;
+}
+
+.formulario input:focus, .formulario textarea:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}
+
+h1 {
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 90px;
+  top: 0;
+  height: 90%;
+  width: 90%;
+  position: absolute;
+}
+
+/* Consultas de medios para tabletas */
+@media screen and (max-width: 768px) {
+  .contact_form {
+    width: 95%;
+    padding: 20px 15px;
+  }
+
+  button {
+    width: 100%;
+    max-width: 100%;
+  }
+  .map-responsive iframe {
+    left: 40px;
+  }
+}
+
+/* Consultas de medios para teléfonos celulares */
+@media screen and (max-width: 480px) {
+  .contact_form {
+    width: 95%;
+    padding: 20px 10px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+
+  button {
+    width: 100%;
+    max-width: 100%;
+  }
+  .map-responsive iframe {
+    left: 20px;
+  }
+}

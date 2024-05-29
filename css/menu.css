@@ -1,0 +1,278 @@
+@import url(https://fonts.googleapis.com/css?family=Muli);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    text-align: justify;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.7s;
+    padding: 15px 20px;
+    z-index: 10;
+    background: transparent;
+}
+
+header.abajo {
+    background: #e33597;
+    padding: 4px 20px;
+}
+
+header .logo1 {
+    display: flex;
+    align-items: center;
+    color: #333333;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 1.5s;
+    text-decoration: none;
+}
+
+header .logo {
+    position: relative;
+    justify-items: center;
+    color: #CF6245;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 1.5s;
+    text-decoration: none;
+}
+
+header .logo1 img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+#menu-bar {
+    display: none;
+}
+
+.icon {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: #333333;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    position: right;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-weight: 600;
+    transition: 0.7s;
+}
+
+header.abajo .logo1,
+header.abajo ul li a {
+    color: white;
+}
+
+header.abajo .icon {
+    color: white;
+}
+
+main>.container {
+    padding: 50px 0;
+}
+
+.btn-flotante {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    background-color: #CF6245;
+    padding: 18px 30px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    transition: all 300ms ease 0ms;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+}
+
+.btn-flotante:hover {
+    background-color: #AA4A30;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-7px);
+    font-style: white;
+}
+
+footer {
+    padding-top: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px;
+    background-color: #b3cde0;
+    flex-wrap: nowrap;
+}
+
+.contactos {
+    margin: 2px;
+    flex: 1;
+    text-align: center;
+}
+
+.contactos p {
+    margin: 8px 0;
+    color: #333;
+}
+
+.contactos p i {
+    margin-right: 10px;
+}
+
+.footer-logo {
+    width: 100px;
+    margin: 10px 0;
+    flex: 0 0 auto;
+}
+
+.links {
+    flex: 1;
+    text-align: center;
+}
+
+.links a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.links a:hover {
+    color: #b85988;
+}
+
+.footer-bottom {
+    text-align: center;
+    background-color: #b85988;
+    color: white;
+    padding: 15px 0;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-wrap: wrap;
+    }
+
+    .contactos p,
+    .links a {
+        font-size: 15px;
+    }
+
+    .footer-bottom {
+        font-size: 15px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    .icon {
+        display: block;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        background: #e33597;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    header.abajo ul li a {
+        background-color: #e33597;
+        color: white;
+    }
+
+    nav ul li a {
+        background-color: white;
+        display: block;
+        padding: 15px 0;
+        margin: 0;
+        color: #333333;
+    }
+
+
+    #menu-bar:checked~nav {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .footer-bottom {
+        font-size: 10px;
+        color: white;
+    }
+
+    .btn-flotante {
+        font-size: 14px;
+        padding: 12px 20px;
+        bottom: 20px;
+        right: 20px;
+    }
+}

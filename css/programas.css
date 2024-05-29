@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Muli);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    text-align: justify;
+}
+
+
+h1 {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+h3{
+    font-weight: normal;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+section article h2 {
+    text-align: center; 
+}
+
+section {
+    margin: 0 auto;
+    width: 90%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+section article {
+    font-size: 0.9rem;
+    height: auto;
+    width: calc(48% - 5px);
+    box-sizing: border-box;
+    background-color: #f9f9f9; 
+    padding: 1%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    color: #551a8b;
+}
+
+section article:hover {
+    background-color: #f1f0f0;
+}
+
+section article img {
+    height: 180px;
+    max-width: 80%;
+    display: block;
+    margin: 5px auto;
+}
+
+@media screen and (max-width: 768px) {
+    section article {
+        width: calc(100% - 10px);
+        margin-bottom: 20px;
+    }
+}
+
+/* Consultas de medios para teléfonos celulares */
+@media screen and (max-width: 480px) {
+    section {
+        gap: 10px;
+    }
+    section article {
+        width: calc(100% - 10px);
+        margin-bottom: 20px;
+    }
+    section article img {
+        height: auto;
+        max-width: 80%;
+        border-radius: 10px;
+    }
+    h3{
+        font-size: 15px;
+    }
+}
